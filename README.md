@@ -93,6 +93,18 @@ ATTENDANT ENDPOINTS
 | DELETE | /api/attendants/:id | Delete attendant by ID |
 
 
+## Postman Collection
+
+Download and import into Postman to test all endpoints:
+
+- [Download Collection](./postman/collection.json)
+
+
+
+## Postman Collection
+You can access and test the API using Postman:
+https://maryannnneji8-864667.postman.co/workspace/Ifunanya's-Workspace~5f381dd3-ac2b-4da2-807b-22c19a7432b4/collection/53204050-97fb69e7-0a60-4073-9bb9-438746f83aa3?action=share&source=copy-link&creator=53204050
+
 
 TECHNOLOGIES USED
 Node.js
