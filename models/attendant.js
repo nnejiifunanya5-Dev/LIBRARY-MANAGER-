@@ -18,4 +18,4 @@ const attendantSchema = new mongoose.Schema({
 
 const attendant = mongoose.model("Attendant", attendantSchema);
 
-module.exports = attendant;
+module.exports = attendant; 

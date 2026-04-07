@@ -135,8 +135,7 @@ exports.returnBook = async (req, res) => {
         if (book.status === "IN") {
             return res.status(400).json({ message: "book is already available" });
         }
-
-        // ✅ correct values
+        
         book.status = "IN";
         book.borrowedBy = null;
         book.IssuedBy = null;

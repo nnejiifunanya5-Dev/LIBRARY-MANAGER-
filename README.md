@@ -41,7 +41,7 @@ It follows the **MVC pattern** to keep models, controllers, and routes organized
 git clone https://github.com/nnejiifunanya5-Dev/LIBRARY-MANAGER-.git
 
 LIBRARYMANAGER/
-│
+│ 
 ├── models/         # Database schemas (Books, Authors, Students, Attendants)
 ├── controllers/    # Business logic for each resource
 ├── routes/         # Express routes for each resource
