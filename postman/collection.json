@@ -1,0 +1,451 @@
+{
+  "info": {
+    "_postman_id": "97fb69e7-0a60-4073-9bb9-438746f83aa3",
+    "name": "LIBRARY MANAGEMENT API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53204050",
+    "_collection_link": "https://go.postman.co/collection/53204050-97fb69e7-0a60-4073-9bb9-438746f83aa3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "CREATE BOOK",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n  \"title\": \"The Great Gatsby\",\r\n  \"isbn\": \"9876543210\",\r\n  \"authors\": [\"69d3e05454280f4880813786\"]\r\n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/book",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "book"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE AUTHOR",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"bio\": \"Biography of John Doe\",\r\n    \"dob\": \"1990-01-01\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/author",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "author"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE AUTHOR Copy",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"bio\": \"Biography of John Doe\",\r\n    \"dob\": \"1990-01-01\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/author",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "author"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE STUDENT",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE ATTENDANT",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "GET BOOKS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET OVERDUE BOOKS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/overdue/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "overdue",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET BOOK BY ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/69d3e05454280f4880813786",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "69d3e05454280f4880813786"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "BORROW BOOK",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"studentId\": \"69d3f9c510475e0674800386\",\r\n  \"attendantId\": \"69d4dabc4858b7b833086507\",\r\n    \"returnDate\": \"2023-12-31\"\r\n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/69d3e59a2bef28b5b1762ec9/borrow",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "69d3e59a2bef28b5b1762ec9",
+            "borrow"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RETURN BOOK",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/69d3e59a2bef28b5b1762ec9/return",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "69d3e59a2bef28b5b1762ec9",
+            "return"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE BOOK",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n  \"title\": \"The Great Gatsby\",\r\n  \"isbn\": \"9876543210\",\r\n  \"authors\": [\"69d3e05454280f4880813786\"]\r\n }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/69d3e05454280f4880813786",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "69d3e05454280f4880813786"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL AUTHORS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n  \"title\": \"The Great Gatsby\",\r\n  \"isbn\": \"9876543210\",\r\n  \"authors\": [\"69d3e05454280f4880813786\"]\r\n }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/author",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "author"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET AUTHOR BY ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " "
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/69d4ee8a1017a6adc08dea7e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "69d4ee8a1017a6adc08dea7e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE AUTHOR",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " "
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/69d4ee8a1017a6adc08dea7e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "69d4ee8a1017a6adc08dea7e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE AUTHOR",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " "
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/69d4ee8a1017a6adc08dea7e",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "69d4ee8a1017a6adc08dea7e"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL STUDENT",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n  \"title\": \"The Great Gatsby\",\r\n  \"isbn\": \"9876543210\",\r\n  \"authors\": [\"69d3e05454280f4880813786\"]\r\n }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ONE STUDENT",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n  \"title\": \"The Great Gatsby\",\r\n  \"isbn\": \"9876543210\",\r\n  \"authors\": [\"69d3e05454280f4880813786\"]\r\n }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/students/69d3f95d10475e0674800382",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "students",
+            "69d3f95d10475e0674800382"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL ATTENDANTS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n  \"title\": \"The Great Gatsby\",\r\n  \"isbn\": \"9876543210\",\r\n  \"authors\": [\"69d3e05454280f4880813786\"]\r\n }"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/attendants/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "attendants",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
